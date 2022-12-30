@@ -16,5 +16,16 @@ export class CalculadoraComponent {
     this.resultado=this.num1+this.num2;
   }
 
+  onResta():void{
+    this.resultado=this.num1-this.num2;
+  }
+  onMulti():void{
+  this.resultado=this.num1 * this.num2;
+}
+
+onDivi():void{
+  this.resultado=this.num1/this.num2;
+}
+
 
 }
