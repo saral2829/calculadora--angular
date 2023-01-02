@@ -1,0 +1,32 @@
+.suma{
+    background-color: yellow;
+    font-size: 1.4rem;
+    color:black;
+    font-weight: 700;
+    padding: 15px;
+
+}
+
+.resta{
+    background-color: rgba(192, 37, 37, 0.666)a(192, 37, 37, 0.666)a(192, 37, 37, 0.666);
+    font-size: 1.4rem;
+    color:white;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.multiplicacion{
+    background-color: blue;
+    font-size: 1.4rem;
+    color:white;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.division{
+    background-color: green;
+    font-size: 1.4rem;
+    color:white;
+    font-weight: 700;
+    padding: 15px;
+}

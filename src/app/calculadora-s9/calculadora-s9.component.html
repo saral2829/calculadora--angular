@@ -1,0 +1,35 @@
+
+
+  <div class="container">
+    <!-- <form> -->
+        <div class="mb-3">
+            <label for="num1" class="form-label">Numero A:</label>
+            <input type="number" class="form-control" name="num1" id="num1" [(ngModel)]="num1">
+              
+    </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Numero B:</label>
+            <input type="number" value="" class="form-control" name="num2" id="num2" [(ngModel)]="num2">
+            
+        </div>
+        <div class="mb-3 ">
+            <select class="form-select" aria-label="Default select example" [(ngModel)]="operaciones">
+                <option selected value="defecto">Elije Operación</option>
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multi">Multiplicacion</option>
+                <option value="divi" >Dividir</option>
+              </select>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="calcular()">Calcular</button>
+
+        <div [ngClass]="{suma:operaciones ==='suma', resta:operaciones==='resta', multiplicacion:operaciones ==='multi', division:operaciones=== 'divi'}" >
+            <span *ngIf="operaciones !== 'defecto'" >{{resultado}}</span>
+            <span appMyfocus *ngIf="operaciones ==='defecto'">No Seleccionó opcion</span>
+         </div>
+      <!-- </form> -->
+
+     
+  </div>
+ 
+ 

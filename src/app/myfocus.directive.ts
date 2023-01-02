@@ -12,7 +12,7 @@ export class MyfocusDirective implements OnInit{
    ngOnInit(): void {
     const element=this.elementRef.nativeElement
     element.focus();
-    this.rendered2.setStyle(element,'background-color','yellow')
+    this.rendered2.setStyle(element,'color','red')
     
    }
 
